@@ -121,12 +121,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     
-        
-        
-        
-            <link rel="preconnect" href="https://s4.zstatic.net" crossorigin>
-        
-    
     <!--- Seo Part-->
     
     <link rel="canonical" href="https://bookzz15.github.io/2025/10/26/hello-world/"/>
@@ -165,7 +159,9 @@
         
     </title>
 
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/fonts/Chillax/chillax.css">
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
 
     <!--- Inject Part-->
     
@@ -175,11 +171,17 @@
 
 
     
-        <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/css/build/tailwind.css">
+        
+<link rel="stylesheet" href="/css/build/tailwind.css">
+
     
 
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/fonts/GeistMono/geist-mono.css">
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/fonts/Geist/geist.css">
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
     <!--- Font Part-->
     
     
@@ -196,10 +198,18 @@
   </script>
     
     <!--- Fontawesome Part-->
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/fontawesome/fontawesome.min.css">
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/fontawesome/brands.min.css">
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/fontawesome/solid.min.css">
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/fontawesome/regular.min.css">
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
     
     
     
@@ -618,44 +628,27 @@
 
         
             
-    <div id="gitalk-container"></div>
-    <script data-swup-reload-script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js"></script>
-    <script data-swup-reload-script>
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
 
-        function loadGitalk() {
-            let __gitalk__pathname = decodeURI(location.pathname);
-            const __gitalk__pathnameLength = __gitalk__pathname.length;
-            const __gitalk__pathnameMaxLength = 50;
-            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
-                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
-            }
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+                    lang: 'zh-CN',
+        });
+      }
 
-            try {
-                Gitalk && new Gitalk({
-                    clientID: 'Ov23liF5pWybJwBoiTt3',
-                    clientSecret: '29ff82d5dd8d44429565d3e7baffc5299d2f55c8',
-                    repo: 'My-Gitalk-Comment',
-                    owner: 'bookzz15',
-                    admin: ['bookzz15'],
-                    id: __gitalk__pathname,
-                    language: 'en',
-                    proxy: 'https://morning-night-36db.bookzhu.workers.dev/'
-                }).render('gitalk-container');
-
-            } catch (e) {
-                window.Gitalk = null;
-            }
-        }
-
-        if ('true') {
-            const loadGitalkTimeout = setTimeout(() => {
-                loadGitalk();
-                clearTimeout(loadGitalkTimeout);
-            }, 1000);
-        } else {
-            window.addEventListener('DOMContentLoaded', loadGitalk);
-        }
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
     </script>
 
 
@@ -831,7 +824,19 @@
 </main>
 
 
-<script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/Swup.min.js" ></script><script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/SwupSlideTheme.min.js" ></script><script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/SwupScriptsPlugin.min.js" ></script><script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/SwupProgressPlugin.min.js" ></script><script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/SwupScrollPlugin.min.js" ></script><script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/SwupPreloadPlugin.min.js" ></script>
+
+<script src="/js/build/libs/Swup.min.js"></script>
+
+<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
 <script>
     const swup = new Swup({
         plugins: [
@@ -854,44 +859,84 @@
 
 
 
-	<script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/tools/imageViewer.js" ></script><script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/utils.js" ></script><script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/main.js" ></script><script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/layouts/navbarShrink.js" ></script><script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/tools/scrollTopBottom.js" ></script><script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/tools/lightDarkSwitch.js" ></script><script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/layouts/categoryList.js" ></script>
+	
+<script src="/js/build/tools/imageViewer.js" type="module"></script>
 
+<script src="/js/build/utils.js" type="module"></script>
 
+<script src="/js/build/main.js" type="module"></script>
 
+<script src="/js/build/layouts/navbarShrink.js" type="module"></script>
 
-    <script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/tools/codeBlock.js" ></script>
+<script src="/js/build/tools/scrollTopBottom.js" type="module"></script>
 
+<script src="/js/build/tools/lightDarkSwitch.js" type="module"></script>
 
-
-    <script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/layouts/lazyload.js" ></script>
-
-
-
-    <script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/tools/runtime.js" ></script>
-    <script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/odometer.min.js" ></script>
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/assets/odometer-theme-minimal.css">
-
-
-
-  <script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/Typed.min.js" ></script>
-  <script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/plugins/typed.js" ></script>
+<script src="/js/build/layouts/categoryList.js" type="module"></script>
 
 
 
 
 
+    
+<script src="/js/build/tools/codeBlock.js" type="module"></script>
 
 
-    <script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/anime.min.js" ></script>
+
+
+    
+<script src="/js/build/layouts/lazyload.js" type="module"></script>
 
 
 
 
-    <script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/tools/tocToggle.js" data-swup-reload-script></script><script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/layouts/toc.js" data-swup-reload-script></script><script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/plugins/tabs.js" data-swup-reload-script></script>
+    
+<script src="/js/build/tools/runtime.js"></script>
+
+    
+<script src="/js/build/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
 
 
-<script  src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/libs/moment-with-locales.min.js" data-swup-reload-script></script>
-<script type="module" src="https://s4.zstatic.net/ajax/libs/hexo-theme-redefine/2.8.5/js/build/layouts/essays.js" data-swup-reload-script></script>
+
+
+  
+<script src="/js/build/libs/Typed.min.js"></script>
+
+  
+<script src="/js/build/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+    
+<script src="/js/build/libs/anime.min.js"></script>
+
+
+
+
+
+    
+<script src="/js/build/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/build/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
 
 
 
