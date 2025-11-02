@@ -37,20 +37,16 @@
   </entry>
   
   <entry>
-    <title>我的第一篇博客</title>
+    <title>关于本博客</title>
     <link href="https://bookzz15.github.io/2025/10/26/1/"/>
     <id>https://bookzz15.github.io/2025/10/26/1/</id>
     <published>2025-10-25T16:00:00.000Z</published>
-    <updated>2025-10-26T16:26:33.956Z</updated>
+    <updated>2025-11-01T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Hexo 启动！</p>]]></content>
+    <content type="html"><![CDATA[<p>本博客由<a class="link"   href="https://hexo.io/zh-cn/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>驱动，主题则是<a class="link"   href="https://redefine-docs.ohevan.com/zh" >Redefine<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br><del>但是我个人认为Hexo在界面左下角的标志有点格格不入，所以我把它删掉了</del><br>在此特别向开发者表达我的歉意<br>并对开发者的付出表达我衷心的敬佩与感谢</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;Hexo 启动！&lt;/p&gt;
-</summary>
-      
+    <summary type="html">关于本博客</summary>
     
     
     
