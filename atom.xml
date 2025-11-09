@@ -43,13 +43,15 @@
     <published>2025-10-25T16:00:00.000Z</published>
     <updated>2025-11-05T11:20:27.000Z</updated>
     
-    <content type="html"><![CDATA[<p>本博客由<a class="link"   href="https://hexo.io/zh-cn/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>驱动，主题则是<a class="link"   href="https://redefine-docs.ohevan.com/zh" >Redefine<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p><p><del class="mask">但是我个人认为Hexo在界面左下角的标志有点格格不入，所以我把它删掉了</del></p><p>在此特别向开发者表达我的歉意</p><p>并对开发者的付出表达我衷心的敬佩与感谢</p>]]></content>
+    <content type="html"><![CDATA[<p>本博客由<a class="link"   href="https://hexo.io/zh-cn/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>驱动，主题则是<a class="link"   href="https://redefine-docs.ohevan.com/zh" >Redefine<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p><p><del class="mask">但是我认为Hexo在界面左下角的标志有点格格不入，所以我把它删掉了</del></p><p>在此特别向开发者表达我的歉意</p><p>并对开发者的付出表达我衷心的敬佩与感谢</p>]]></content>
     
     
     <summary type="html">搭建平台、使用的主题</summary>
     
     
     
+    
+    <category term="Blog" scheme="https://bookzz15.github.io/tags/Blog/"/>
     
   </entry>
   
